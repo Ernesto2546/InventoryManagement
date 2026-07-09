@@ -1,0 +1,55 @@
+/* Form styles shared across Create/Edit/Delete views */
+
+.form-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.form-card {
+    background: linear-gradient(180deg, #ffffff, #fbfbfb);
+    border: 1px solid rgba(44, 62, 80, 0.06);
+    border-radius: 0.6rem;
+    padding: 1.25rem;
+    box-shadow: 0 6px 18px rgba(44, 62, 80, 0.04);
+}
+
+.form-group label.control-label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+.form-group .form-control {
+    border-radius: 0.45rem;
+}
+
+.form-actions .btn-primary-custom {
+    background: linear-gradient(180deg, #0d6efd, #0040d6);
+    border: none;
+    padding: 0.5rem 1.15rem;
+    border-radius: 0.45rem;
+}
+
+.form-actions .btn-outline-secondary {
+    padding: 0.45rem 1rem;
+    border-radius: 0.45rem;
+}
+
+.form-note {
+    font-size: 0.85rem;
+}
+
+/* Small responsive tweaks */
+@media (max-width: 576px) {
+    .form-card {
+        padding: 0.9rem;
+    }
+
+    .form-actions .btn-primary-custom,
+    .form-actions .btn-outline-secondary {
+        width: 100%;
+    }
+
+    .form-actions .btn-outline-secondary { margin-top: 0.5rem; }
+}

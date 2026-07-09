@@ -1,0 +1,22 @@
+﻿.table-card {
+    background: white;
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.table-custom {
+    margin: 0;
+}
+
+    .table-custom thead {
+        background: #eef4ff;
+    }
+
+    .table-custom th {
+        font-weight: 600;
+    }
+
+    .table-custom tbody tr:hover {
+        background: #f8f9fa;
+    }

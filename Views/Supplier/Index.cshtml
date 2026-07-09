@@ -1,0 +1,62 @@
+@model IEnumerable<InventoryManagement.Models.Supplier>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="page-header-index">
+    <h1 class="page-title-index">
+        Suppliers
+    </h1>
+
+    <a asp-action="Create" class="btn-primary-custom">
+        <i class="bi bi-person-plus-fill"></i>
+        Add Supplier
+    </a>
+</div>
+
+<div class="table-card">
+    <table class="table table-hover table-custom table-borderless table-responsive">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Adress)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Adress)
+                    </td>
+                    <td class="action-buttons">
+                        <partial name="Components/_ActionButtons"
+                                 model="item.Id" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
