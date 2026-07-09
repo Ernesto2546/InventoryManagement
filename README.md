@@ -61,8 +61,8 @@ Update-Database
 * ✅ Entity Framework Core configuration
 * ✅ Database creation with Code First
 * ✅ Category CRUD
-* 🔄 Supplier CRUD
-* ⏳ Product CRUD
+* ✅ Supplier CRUD
+* 🔄 Product CRUD
 * ⏳ Dashboard
 * ⏳ Search and filtering
 * ⏳ Inventory reports
