@@ -1,0 +1,37 @@
+﻿.btn-primary-custom {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: var(--radius);
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    transition: .25s;
+    font-weight: 600;
+}
+
+    .btn-primary-custom:hover {
+        background: var(--primary-dark);
+        color: white;
+        transform: translateY(-2px);
+    }
+
+.btn-danger-custom {
+    background: var(--danger);
+    color: white;
+}
+
+.btn-success-custom {
+    background: var(--success);
+    color: white;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}

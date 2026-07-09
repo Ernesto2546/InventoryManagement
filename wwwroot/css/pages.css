@@ -1,0 +1,49 @@
+﻿.page-header-index {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.page-header.centered {
+    justify-content: flex-end; 
+}
+
+.page-header.centered .page-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.page-title {
+    
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.page-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 3px;
+}
+
+.page-title{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.page-subtitle {
+    color: var(--gray);
+}

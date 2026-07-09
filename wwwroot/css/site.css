@@ -1,3 +1,18 @@
+@import url("variables.css");
+@import url("layout.css");
+@import url("buttons.css");
+@import url("cards.css");
+@import url("forms.css");
+@import url("tables.css");
+@import url("pages.css");
+@import url("utilities.css");
+
+body {
+    background: #f5f7fb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
 html {
   font-size: 14px;
 }
@@ -70,8 +85,43 @@ main {
     background: white;
     border-radius: 15px;
     overflow: hidden;
+    text-align: center;
 }
 
 footer {
     font-size: .9rem;
 }
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+/* principal btn */
+.btn-primary-custom {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    padding: 12px 22px;
+    border-radius: 12px;
+    background: #0d6efd;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .25s ease;
+}
+
+    .btn-primary-custom:hover {
+        background: #0b5ed7;
+        color: #fff;
+        transform: translateY(-2px);
+    }

@@ -1,0 +1,19 @@
+﻿.shadow-soft {
+    box-shadow: var(--shadow);
+}
+
+.rounded-xl {
+    border-radius: var(--radius);
+}
+
+.mt-large {
+    margin-top: 40px;
+}
+
+.mb-large {
+    margin-bottom: 40px;
+}
+
+.text-muted-custom {
+    color: var(--gray);
+}
