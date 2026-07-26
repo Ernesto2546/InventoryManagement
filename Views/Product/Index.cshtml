@@ -1,0 +1,85 @@
+@model IEnumerable<InventoryManagement.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="page-header-index">
+    <h1 class="page-title-index">
+        Products
+    </h1>
+
+    <a asp-action="Create" class="btn-primary-custom">
+        <i class="bi bi-archive-fill"></i>
+        Add Product
+    </a>
+</div>
+<div class="table-card">
+    <table class="table table-hover table-custom table-borderless table-responsive">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Stock)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MinimumStock)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CategoryId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SupplierId)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Stock)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.MinimumStock)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.CreatedDate)
+                    </td>
+                    <td>
+                        @item.Category?.Name
+                    </td>
+                    <td>
+                        @item.Supplier?.Name
+                    </td>
+                    <td class="action-buttons">
+                        <partial name="Components/_ActionButtons"
+                                 model="item.Id" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
