@@ -62,8 +62,8 @@ Update-Database
 * ✅ Database creation with Code First
 * ✅ Category CRUD
 * ✅ Supplier CRUD
-* 🔄 Product CRUD
-* ⏳ Dashboard
+* ✅ Product CRUD
+* 🔄 Dashboard
 * ⏳ Search and filtering
 * ⏳ Inventory reports
 
